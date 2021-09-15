@@ -1,7 +1,7 @@
 package assignment1;
 import java.util.Scanner;
 
-public class age {
+public class Age {
 
 	public static void main(String args[]) {
 		Scanner scan = new Scanner(System.in);
