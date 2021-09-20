@@ -1,5 +1,6 @@
 package assignment1;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 
 public class Student {
@@ -55,7 +56,9 @@ public class Student {
 
 			   //descending order
 			   //return StudentName2.compareTo(StudentName1);
-		    }};
+		    }
+		};
+
 }
 
 

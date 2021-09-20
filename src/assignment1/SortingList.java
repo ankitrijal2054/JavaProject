@@ -3,6 +3,12 @@ package assignment1;
 import java.util.*;
 
 public class SortingList {
+	
+	public static void display(ArrayList<Student> student_list) {
+		for(Student str: student_list){
+			System.out.println(str.getFirstName() + " " + str.getLastName() + " GPA = " + str.getGpa());
+		}	
+	}
 
 	public static void main(String[] args) {
 		
@@ -16,11 +22,15 @@ public class SortingList {
 		
 		
 		System.out.println("Sorting Student based on their last name");
-		   Collections.sort(student_list, Student.StuNameComparator);
+		Collections.sort(student_list, Student.StuNameComparator);
 
-		   for(Student str: student_list){
-				System.out.println(str.getFirstName() + " " + str.getLastName() + " GPA = " + str.getGpa());
-		   }
+		display(student_list);
+		
+		int last_index = student_list.size()-1;
+		student_list.remove(last_index);
+		
+		System.out.println("\nAfter removing last object:");
+		display(student_list);
 	}
 
 }
